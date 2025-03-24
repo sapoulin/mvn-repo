@@ -5,11 +5,7 @@
 		<groupId>org.mforg</groupId>
 		<artifactId>DMARCReporting</artifactId>
 		<version>1.0.0</version>
-		<relativePath/>
-		<!--
 		<relativePath>../DMARCReporting</relativePath>
-		-->
-		<!-- lookup parent from repository -->
 	</parent>
 	<artifactId>DMARCReporting-App</artifactId>
 	<version>1.0.1</version>

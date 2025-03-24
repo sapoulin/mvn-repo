@@ -5,10 +5,7 @@
      <groupId>org.mforg</groupId>
      <artifactId>DMARCReporting</artifactId>
      <version>1.0.0</version>
-     <relativePath/>
-     <!--
      <relativePath>../DMARCReporting</relativePath>
-     -->
   </parent>
   <groupId>org.mforg.common</groupId>
   <artifactId>DMARCReporting-Common</artifactId>
