@@ -5,7 +5,10 @@
      <groupId>org.mforg</groupId>
      <artifactId>DMARCReporting</artifactId>
      <version>1.0.0</version>
+     <relativePath/>
+     <!--
      <relativePath>../DMARCReporting</relativePath>
+     -->
   </parent>
   <groupId>org.mforg.common</groupId>
   <artifactId>DMARCReporting-Common</artifactId>
@@ -60,14 +63,14 @@
   </dependencyManagement>
 
 <build>
-<plugins>
-  <plugin>
-      <artifactId>maven-deploy-plugin</artifactId>
-      <configuration>
-          <altDeploymentRepository>internal.repo::default::file:///G:/Users/Marc/Documents/eclipse-jee-workspace/mvn-repo</altDeploymentRepository>
-      </configuration>
-  </plugin>	
-</plugins>
+	<plugins>
+	  <plugin>
+	      <artifactId>maven-deploy-plugin</artifactId>
+	      <configuration>
+	          <altDeploymentRepository>internal.repo::file:///G:/Users/Marc/Documents/eclipse-jee-workspace/mvn-repo</altDeploymentRepository>
+	      </configuration>
+	  </plugin>	
+	</plugins>
 </build>
   
 <distributionManagement>
