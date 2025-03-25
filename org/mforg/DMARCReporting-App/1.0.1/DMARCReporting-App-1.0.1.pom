@@ -84,37 +84,37 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			
-  <plugin>
-      <artifactId>maven-deploy-plugin</artifactId>
-      <configuration>
-          <altDeploymentRepository>internal.repo::file:///G:/Users/Marc/Documents/eclipse-jee-workspace/mvn-repo</altDeploymentRepository>
-      </configuration>
-  </plugin>			
+		  <plugin>
+		      <artifactId>maven-deploy-plugin</artifactId>
+		      <configuration>
+		          <altDeploymentRepository>internal.repo::file:///G:/Users/Marc/Documents/eclipse-jee-workspace/mvn-repo</altDeploymentRepository>
+		      </configuration>
+		  </plugin>			
 			
 		</plugins>
 	</build>
 	
-<distributionManagement>
+	<distributionManagement>
 		<repository>
 			<id>internal.repo</id>
 			<name>Github Repo</name>
 			<url>file:///G:/Users/Marc/Documents/eclipse-jee-workspace/mvn-repo</url>
 		</repository>
-</distributionManagement>
+	</distributionManagement>
 
-<repositories>
-	<repository>
-		<id>sapoulin-github-repo</id>
-		<url>https://github.com/sapoulin/mvn-repo/main/</url>
-		<releases>
-	            <enabled>true</enabled>
-	            <updatePolicy>daily</updatePolicy>
-	        </releases>
-		<snapshots>
-	            <enabled>true</enabled>
-	            <updatePolicy>always</updatePolicy>
-	        </snapshots>
-	</repository>
-</repositories>
+	<repositories>
+		<repository>
+			<id>sapoulin-github-repo</id>
+			<url>https://github.com/sapoulin/mvn-repo/main/</url>
+			<releases>
+	         <enabled>true</enabled>
+	         <updatePolicy>always</updatePolicy>
+		   </releases>
+			<snapshots>
+	         <enabled>true</enabled>
+	         <updatePolicy>always</updatePolicy>
+	      </snapshots>
+		</repository>
+	</repositories>
 	
 </project>
